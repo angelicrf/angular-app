@@ -1,0 +1,5 @@
+<div *ngIf="ofAuth.user | async as user">
+  <p>Name: {{user.displayName}}</p>
+  <p>Email: {{user.email}}</p>
+  <p>UserId: {{user.uid}}</p>
+</div>

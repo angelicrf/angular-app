@@ -1,7 +1,7 @@
 <div class="login-container">
     <div class="ui card login-card">
       <div class="content">
-        <form class="ui form" #form="ngForm" (submit)="onSubmit(form)" [class.loading]="loading">
+        <form class="ui form" #form="ngForm" (submit)="onSubmit(form);  form.reset()" [class.loading]="loading">
           <div class="two fields">
             <div class="field">
               <label>First Name</label>

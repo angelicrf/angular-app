@@ -3,6 +3,7 @@
 <div class="my-container">
   <div>
     <h1>Welcome : Angelique</h1>
+    <button *ngIf="auth.isLoggedIn()" class="ui secondary button logout" (click)="logout()">Logout</button>
 
   </div>
 </div>
