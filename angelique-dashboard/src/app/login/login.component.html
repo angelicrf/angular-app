@@ -2,7 +2,7 @@
     <div class="ui card login-card">
       <div class="content">
         <form class="ui form" #form="ngForm" (submit)="onSubmit(form);  form.reset()" [class.loading]="loading">
-          <div class="two fields">
+          <div class="two fields" *ngIf="isSignUp">
             <div class="field">
               <label>First Name</label>
               <label>
@@ -28,7 +28,20 @@
               <input type="password" name="password" value="" placeholder="Password" ngModel/>
             </label>
           </div>
-          <button class="ui primary button login" type="submit">Sign Up</button>
+          <div class="actions">
+            <button class="ui primary button login" type="submit">{{action | uppercase}}</button>
+            <span *ngIf="isLogin">
+              or
+              <a href="" (click)="action = 'signup'">
+              Sign Up
+              </a>
+            </span>
+            <span *ngIf="isSignUp">
+              <a href="" (click)="action = 'login'">
+              Login
+              </a>
+            </span>
+          </div>
         </form>
       </div>
     </div>

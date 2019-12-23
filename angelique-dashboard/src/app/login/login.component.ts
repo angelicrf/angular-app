@@ -13,7 +13,7 @@ import {Router} from "@angular/router";
 export class LoginComponent implements OnInit {
 
   loading=false;
-
+  action:'login' | 'signup' = 'login';
   constructor(private afAuth: AngularFireAuth, private router: Router) {}
 
   ngOnInit() {
@@ -26,23 +26,31 @@ export class LoginComponent implements OnInit {
     console.log("Form values are:", form.value);
 
 
-
+    let resp;
 
     try{
-     // form.form.reset();
-      const resp = await this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+
+     if(this.isSignUp){
+       resp = await this.afAuth.auth.createUserWithEmailAndPassword(email, password);
       console.log("the response is: ", resp);
       await resp.user.updateProfile({displayName :`${firstName} ${lastName}`});
-
+       form.reset();
+     }
+     else{
+       resp = await this.afAuth.auth.signInWithEmailAndPassword(email, password);
+     }
       const uid = resp.user.uid;
-     //form.resetForm(userDefault());
-
-      form.form.reset();
+      //form.resetForm(userDefault());
       this.router.navigate([`/profile/${uid}`]);
-
     }catch (e) {
       console.log(e.message);
     }
     this.loading=false;
+  }
+  get isLogin(){
+    return this.action === 'login';
+  }
+  get isSignUp(){
+    return this.action === 'signup';
   }
 }
