@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AngularFireAuth} from "@angular/fire/auth";
 import {Router} from "@angular/router";
 import {NgForm} from "@angular/forms";
+import {AuthService} from "../core/auth.service";
 
 
 @Component({
@@ -14,8 +15,7 @@ export class LoginComponent implements OnInit {
 
   loading=false;
   action:'login' | 'signup' = 'login';
-  userFound;
-  constructor(private afAuth: AngularFireAuth, private router: Router) {}
+  constructor(private afAuth: AngularFireAuth, private router: Router, private auth: AuthService) {}
 
 
   ngOnInit() {
@@ -34,8 +34,7 @@ export class LoginComponent implements OnInit {
        resp = await this.afAuth.auth.createUserWithEmailAndPassword(email, password);
       console.log("the response is: ", resp);
       await resp.user.updateProfile({displayName :`${firstName} ${lastName}`});
-       this.userFound=resp.user.email;
-
+       await this.auth.createUserDocument();
 
        form.reset();
      }
