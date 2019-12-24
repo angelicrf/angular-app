@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AngularFireAuth} from "@angular/fire/auth";
-import {NgForm} from "@angular/forms";
 import {Router} from "@angular/router";
-
+import {NgForm} from "@angular/forms";
 
 
 @Component({
@@ -10,11 +9,14 @@ import {Router} from "@angular/router";
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
+
 export class LoginComponent implements OnInit {
 
   loading=false;
   action:'login' | 'signup' = 'login';
+  userFound;
   constructor(private afAuth: AngularFireAuth, private router: Router) {}
+
 
   ngOnInit() {
   }
@@ -25,15 +27,16 @@ export class LoginComponent implements OnInit {
     let {email, password, firstName, lastName} = form.value;
     console.log("Form values are:", form.value);
 
-
     let resp;
-
     try{
 
      if(this.isSignUp){
        resp = await this.afAuth.auth.createUserWithEmailAndPassword(email, password);
       console.log("the response is: ", resp);
       await resp.user.updateProfile({displayName :`${firstName} ${lastName}`});
+       this.userFound=resp.user.email;
+
+
        form.reset();
      }
      else{
