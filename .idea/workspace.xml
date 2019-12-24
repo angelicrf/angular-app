@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/core/user-profile.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/core/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/core/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/profile/profile.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/profile/profile.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/profile/profile.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +72,7 @@
       <workItem from="1577148775384" duration="6097000" />
       <workItem from="1577210629118" duration="3118000" />
       <workItem from="1577215853712" duration="3368000" />
+      <workItem from="1577220492654" duration="4694000" />
     </task>
     <servers />
   </component>

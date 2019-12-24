@@ -2,7 +2,10 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div class="my-container">
   <div>
-    <h1>Welcome : {{title}}</h1>
+    <
+    <h1>Welcome : {{title}}, {{displayMessage}}</h1>
+    <br/>
+    <br/>
     <button *ngIf="auth.isLoggedIn()" class="ui secondary button logout" (click)="logout()">Logout</button>
 
   </div>

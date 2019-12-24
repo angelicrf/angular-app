@@ -10,6 +10,8 @@ const redearectToUnauthorizedtoLogin = () => redirectUnauthorizedTo(['']);
 
 const redearectLoggedInToProfile = () => map(userFound => userFound ? ['profile', (userFound as any).uid]: true);
 
+
+
 const routes: Routes = [
   {
     path: '',

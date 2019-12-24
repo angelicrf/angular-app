@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {AuthService} from "./core/auth.service";
-import {LoginComponent}from "./login/login.component"
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +8,10 @@ import {LoginComponent}from "./login/login.component"
 export class AppComponent implements OnInit{
 
   title = 'angelique-dashboard';
-  nh:LoginComponent;
+  displayMessage:string;
+  @Input() public parentData;
 
-  constructor(private auth: AuthService){}
+  constructor(private auth: AuthService, private userName: AuthService){}
 
 
   logout(){
@@ -19,6 +19,6 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void {
-
+    this.userName.displayMessage.subscribe(displayMessage => this.displayMessage = displayMessage);
   }
 }

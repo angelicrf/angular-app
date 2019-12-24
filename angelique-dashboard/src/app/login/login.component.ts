@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
 
   loading=false;
   action:'login' | 'signup' = 'login';
+  public name;
   constructor(private afAuth: AngularFireAuth, private router: Router, private auth: AuthService) {}
 
 
@@ -42,6 +43,7 @@ export class LoginComponent implements OnInit {
        resp = await this.afAuth.auth.signInWithEmailAndPassword(email, password);
      }
       const uid = resp.user.uid;
+     this.name = resp.user.uid;
       //form.resetForm(userDefault());
       this.router.navigate([`/profile/${uid}`]);
     }catch (e) {
