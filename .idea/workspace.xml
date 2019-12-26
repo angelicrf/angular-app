@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="" />
+    <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/angelique-dashboard/data-dashboard-213fc-firebase-adminsdk-egxhi-daa883c6fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angelique-dashboard/set-custom-claim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/firestore.rules" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/firestore.rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/core/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/core/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angelique-dashboard/storage.rules" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/storage.rules" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -14,7 +34,7 @@
   <component name="ProjectId" id="1VGOexw35fZr2TNETIdE86s3OAK" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/angelique-dashboard/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/angelique-dashboard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -28,6 +48,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/angelique-dashboard" />
       <recent name="$PROJECT_DIR$/angelique-dashboard/src/assets" />
       <recent name="$PROJECT_DIR$/angelique-dashboard/src/app/profile" />
       <recent name="$PROJECT_DIR$/angelique-dashboard/src/app/login" />
@@ -66,7 +87,10 @@
       <workItem from="1577210629118" duration="3118000" />
       <workItem from="1577215853712" duration="3368000" />
       <workItem from="1577220492654" duration="4905000" />
-      <workItem from="1577301158120" duration="5726000" />
+      <workItem from="1577301158120" duration="6111000" />
+      <workItem from="1577385300439" duration="769000" />
+      <workItem from="1577387621988" duration="6622000" />
+      <workItem from="1577395296644" duration="28000" />
     </task>
     <servers />
   </component>

@@ -42,4 +42,13 @@ export class AuthService {
   updateUserDocument(useProfile:UserProfile){
     return this.afs.doc(`users/${useProfile.uid}`).update(useProfile);
   }
+  async routeOnLogin(){
+    const user = this.anAuth.auth.currentUser;
+    const token = await user.getIdTokenResult();
+    if(token.claims.admin){
+      this.router.navigate(['/users']);
+    }else {
+      this.router.navigate([`/profile/${user.uid}`]);
+    }
+  }
 }
