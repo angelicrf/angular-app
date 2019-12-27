@@ -11,7 +11,7 @@ export class AppComponent implements OnInit{
   displayMessage:string;
   @Input() public parentData;
 
-  constructor(private auth: AuthService, private userName: AuthService){}
+  constructor(public auth: AuthService, private userName: AuthService){}
 
 
   logout(){
