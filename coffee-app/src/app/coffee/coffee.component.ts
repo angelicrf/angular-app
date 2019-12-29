@@ -12,6 +12,7 @@ import {DataService} from '../data.service';
 })
 export class CoffeeComponent implements OnInit {
   coffee: Coffee;
+  tastingEnabled : boolean;
   types = ['Espresso', 'Ristretto', 'Americano', 'Cappuccino', 'Frappe'];
   constructor(private route: ActivatedRoute,
               private geolocation: GeolocationService,
@@ -40,7 +41,15 @@ export class CoffeeComponent implements OnInit {
   ngOnInit() {
     this.coffee = new Coffee();
     this.routingSubscription = this.route.params.subscribe( params => {
-      console.log(params['id']);
+      console.log('The params is : ', params.id);
+      if (params.id) {
+        this.dataservice.get(params.id, response => {
+          this.coffee = response;
+          if (this.coffee.tasteRating) {
+            this.tastingEnabled = true;
+          }
+        });
+      }
     });
     this.geolocation.requestLocation(location => {
       this.coffee.location.latitude = location.latitude;

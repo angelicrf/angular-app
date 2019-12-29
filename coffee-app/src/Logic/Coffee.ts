@@ -2,7 +2,8 @@ import {PlaceLocation} from './PlaceLocation';
 import {TastingRating} from './TastingRating';
 
 export class Coffee {
-
+  // tslint:disable-next-line:variable-name
+  _id: string;
   type: string;
   rating: number;
   notes: string;
