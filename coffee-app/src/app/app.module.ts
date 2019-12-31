@@ -14,6 +14,8 @@ import { CoffeeComponent } from './coffee/coffee.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 const routs: Routes = [
@@ -44,7 +46,8 @@ const routs: Routes = [
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [GeolocationService, DataService],
   bootstrap: [AppComponent]

@@ -12,7 +12,7 @@ import {DataService} from '../data.service';
 })
 export class CoffeeComponent implements OnInit {
   coffee: Coffee;
-  tastingEnabled : boolean;
+  tastingEnabled: boolean;
   types = ['Espresso', 'Ristretto', 'Americano', 'Cappuccino', 'Frappe'];
   constructor(private route: ActivatedRoute,
               private geolocation: GeolocationService,
