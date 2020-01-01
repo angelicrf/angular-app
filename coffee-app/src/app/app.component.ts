@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatSnackBar} from '@angular/material';
+import {style} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,17 @@ export class AppComponent implements OnInit {
   constructor(private snackBar: MatSnackBar) {
 
   }
+  updateNetworkStatusUI() {
+    if (navigator.onLine) {
+      (document.querySelector('body') as any).style = '';
+    } else {
+      (document.querySelector('body') as any).style = 'filter: grayscale(1)';
+    }
+  }
   ngOnInit() {
+    this.updateNetworkStatusUI();
+    window.addEventListener('online', this.updateNetworkStatusUI);
+    window.addEventListener('offline', this.updateNetworkStatusUI);
     // tslint:disable-next-line:triple-equals
     if ((navigator as any).standalone == false) {
       this.snackBar.open('You can add pwa to the home screen', '', {duration: 3000});
