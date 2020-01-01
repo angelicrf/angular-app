@@ -13,7 +13,8 @@
           "/*.js"
         ],
         "urls": [
-          "https://fonts.googleapis.com/**"
+          "https://fonts.googleapis.com/**",
+          "https://fonts.gstatic.com/**"
         ]
       }
     }, {
@@ -25,6 +26,20 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
+      }
+    }
+  ],
+  "dataGroups":[
+    {
+      "name":"api-myApp",
+      "urls": [
+        "localhost:3000/coffees"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "timeout": "10s",
+        "maxSize": 30,
+        "maxAge": "1d"
       }
     }
   ]
