@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee-app/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-app/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$USER_HOME$/npm/lib/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/angelique-dashboard/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -86,7 +85,7 @@
       <workItem from="1577385300439" duration="769000" />
       <workItem from="1577387621988" duration="6622000" />
       <workItem from="1577395296644" duration="7696000" />
-      <workItem from="1577997539283" duration="882000" />
+      <workItem from="1577997539283" duration="3906000" />
     </task>
     <servers />
   </component>
