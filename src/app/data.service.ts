@@ -11,7 +11,7 @@ export class DataService {
 
   constructor(private http: HttpClient ) { }
 
-  public endpoint = 'http://localhost:30028';
+  public endpoint = 'http://localhost:30026';
   get(coffeeId: string, callback) {
     this.http.get(`${this.endpoint}/coffees/${coffeeId}`)
       .subscribe(response => {

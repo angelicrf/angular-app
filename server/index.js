@@ -11,7 +11,8 @@ const dataStore = new nedb({
 const restApi = rest();
 restApi.addDatastore('coffees',dataStore);
 app.use(cors());
+const server_port = process.env.SERVER_PORT;
 app.use('/', restApi);
-app.listen(process.env.SERVER_PORT);
-
+app.listen(server_port);
+console.log(`The server is running on port :${server_port}`);
 
