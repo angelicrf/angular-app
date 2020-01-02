@@ -12,6 +12,6 @@ const restApi = rest();
 restApi.addDatastore('coffees',dataStore);
 app.use(cors());
 app.use('/', restApi);
-app.listen(process.env.PORT);
+app.listen(process.env.SERVER_PORT);
 
 

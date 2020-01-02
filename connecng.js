@@ -11,7 +11,7 @@ app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname+`/dist/coffee-app/index.html`));
 
 });
-const port = 4200;
+const port = process.env.PORT;
 
 app.listen(port);
 console.log(`the Server is running on port ${port}`);
