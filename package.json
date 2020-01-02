@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"cd server && node index.js\" \"ng serve --prod\"",
+    "start": "concurrently \"cd server && node index.js\" \"node connecng.js\"",
     "heroku-postbuild": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
