@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "cd server && node index.js",
-    "heroku-postbuild": "ng build --aot --prod && cd server && npm install",
+    "start": "node index.js",
+    "heroku-postbuild": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

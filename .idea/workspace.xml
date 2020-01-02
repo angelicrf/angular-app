@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angelique-dashboard/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angelique-dashboard/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee-app/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-app/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
   <component name="ProjectId" id="1VGOexw35fZr2TNETIdE86s3OAK" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/angelique-dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,6 +86,7 @@
       <workItem from="1577385300439" duration="769000" />
       <workItem from="1577387621988" duration="6622000" />
       <workItem from="1577395296644" duration="7696000" />
+      <workItem from="1577997539283" duration="882000" />
     </task>
     <servers />
   </component>
