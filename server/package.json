@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "run": "node index"
   },
-  "proxy": "https://young-tundra-14994.herokuapp:30025",
+  "proxy": "http://localhost:30025",
   "author": "Angelique Refahiyat",
   "license": "MIT",
   "dependencies": {
