@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"cd server && npm install && node index.js\" \"node connecng.js\"",
-    "heroku-postbuild": "ng build --aot --prod && npm start",
+    "heroku-postbuild": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
