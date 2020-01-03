@@ -13,7 +13,7 @@ restApi.addDatastore('coffees',dataStore);
 app.use(cors());
 const server_port = process.env.SERVER_PORT;
 app.use('/', restApi);
-let data= "somerandom string";
+/*let data= "somerandom string";
 fetch('http://localhost:30026/coffees', {
   method: 'post',
   body: JSON.stringify({
@@ -23,7 +23,7 @@ fetch('http://localhost:30026/coffees', {
   return res.text();
 }).then((body)=> {
   console.log(body)// body can be used to get data from another server
-});
+});*/
 app.listen(server_port);
 console.log(`The server is running on port :${server_port}`);
 

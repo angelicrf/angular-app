@@ -5,10 +5,9 @@ const path = require('path');
 const app = express();
 let routing ='';
 app.use(express.static(__dirname + `/dist/coffee-app`));
-
+app.use(express.static(__dirname + '/server'));
 app.get('*', function (req, res) {
-  routing = req.route;
-  console.log("the route is" , routing);
+
   res.sendFile(path.join(__dirname+`/dist/coffee-app/index.html`));
 
 });
