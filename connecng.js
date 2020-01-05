@@ -5,12 +5,12 @@ const path = require('path');
 const app = express();
 let routing ='';
 app.use(express.static(__dirname + '/dist/coffee-app'));
-app.use(express.static(__dirname + '/server'));
+/*app.use(express.static(__dirname + '/server'));*/
 app.get('*', function (req, res) {
 
   res.sendFile(path.join(__dirname+`/dist/coffee-app/index.html`));
-  res.sendFile(__dirname + '/server/index.js');
-  res.sendFile(__dirname + '/server/mycoffeeapp.db');
+/*  res.sendFile(__dirname + '/server/index.js');
+  res.sendFile(__dirname + '/server/mycoffeeapp.db');*/
 });
 const port = process.env.PORT;
 
