@@ -4,6 +4,8 @@
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coffee-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee-app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +32,7 @@
   <component name="ProjectId" id="1VGOexw35fZr2TNETIdE86s3OAK" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/coffee-app/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,16 +45,16 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/server/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/coffee-app/src" />
       <recent name="$PROJECT_DIR$/angelique-dashboard" />
       <recent name="$PROJECT_DIR$/angelique-dashboard/src/assets" />
       <recent name="$PROJECT_DIR$/angelique-dashboard/src/app/profile" />
-      <recent name="$PROJECT_DIR$/angelique-dashboard/src/app/login" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/server/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -94,7 +96,8 @@
       <workItem from="1577395296644" duration="7696000" />
       <workItem from="1577997539283" duration="22189000" />
       <workItem from="1578077736649" duration="4888000" />
-      <workItem from="1578253206695" duration="5771000" />
+      <workItem from="1578253206695" duration="6474000" />
+      <workItem from="1578261452561" duration="2620000" />
     </task>
     <servers />
   </component>
