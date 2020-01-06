@@ -10,7 +10,7 @@ export class DataService {
   productos: any[] = [];
 
   constructor(private http: HttpClient ) { }
-  public endpoint = 'https://young-tundra-14994.herokuapp.com' + encodeURIComponent(process.env.SERVER_PORT);
+  public endpoint = 'https://young-tundra-14994.herokuapp.com' + process.env.SERVER_PORT;
 
 
   get(coffeeId: string, callback) {
