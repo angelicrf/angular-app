@@ -11,7 +11,7 @@ export class DataService {
 
   constructor(private http: HttpClient ) { }
 
-  public endpoint = 'https://localhost:30026';
+  public endpoint = 'http://localhost:30026';
    /* //+ encodeURIComponent(process.env.SERVER_PORT);*/
 
   get(coffeeId: string, callback) {
