@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"cd server && npm install && node index.js\" \"npm install && http-server http-server ./ -p ${PORT:=5000} -c-1\"",
+    "start": "concurrently \"cd server && npm install && node index.js\" \"npm install && http-server -a https://young-tundra-14994.herokuapp.com -p $PORT -c-1\"",
     "heroku-postbuild": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
