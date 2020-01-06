@@ -11,7 +11,7 @@ const dataStore = new nedb({
 const restApi = rest();
 restApi.addDatastore('coffees',dataStore);
 app.use(cors());
-const server_port = process.env.PORT;
+const server_port = process.env.SERVER_PORT;
 app.use('/', restApi);
 /*let data= "somerandom string";
 fetch('http://localhost:30026/coffees', {
