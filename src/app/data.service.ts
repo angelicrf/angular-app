@@ -10,7 +10,7 @@ export class DataService {
   productos: any[] = [];
 
   constructor(private http: HttpClient ) { }
-  public endpoint = `http://0.0.0.0:30026`;
+  public endpoint = `https://0.0.0.0:30026`;
 
 
   get(coffeeId: string, callback) {
