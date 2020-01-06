@@ -11,8 +11,10 @@ export class DataService {
 
   constructor(private http: HttpClient ) { }
 
-  public endpoint = `https://young-tundra-14994.herokuapp.com:${process.env.SERVER_PORT}`;
+  public endpoint = 'https://young-tundra-14994.herokuapp.com:' + encodeURIComponent(process.env.PORT);
+
   get(coffeeId: string, callback) {
+    console.log(`here is the ${this.endpoint}`);
     this.http.get(`${this.endpoint}/coffees/${coffeeId}`)
       .subscribe(response => {
         callback(response);
