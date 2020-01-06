@@ -11,6 +11,7 @@ const dataStore = new nedb({
 const restApi = rest();
 restApi.addDatastore('coffees',dataStore);
 app.use(cors());
+let host = process.env.NODE_HOST;
 const server_port = process.env.SERVER_PORT;
 app.use('/', restApi);
 /*let data= "somerandom string";
@@ -24,6 +25,6 @@ fetch('http://localhost:30026/coffees', {
 }).then((body)=> {
   console.log(body)// body can be used to get data from another server
 });*/
-app.listen(server_port);
+app.listen(host,server_port);
 console.log(`The server is running on port :${server_port}`);
 

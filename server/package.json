@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "run": "node index"
   },
-  "proxy": "http://localhost:30025",
   "author": "Angelique Refahiyat",
   "license": "MIT",
   "dependencies": {
