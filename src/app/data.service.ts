@@ -10,12 +10,12 @@ export class DataService {
   productos: any[] = [];
 
   constructor(private http: HttpClient ) { }
-/*  //public endpoint = `http://${process.env.NODE_HOST}:${process.env.SERVER_PORT}`;
-   /!* //+ encodeURIComponent(process.env.SERVER_PORT);*!/*/
+  public endpoint = `http://0.0.0.0:30026`;
+
 
   get(coffeeId: string, callback) {
  /*   //console.log(`here is the ${this.endpoint}`);*/
-    this.http.get(`/coffees/${coffeeId}`)
+    this.http.get(`${this.endpoint}/coffees/${coffeeId}`)
       .subscribe(response => {
         callback(response);
       });
@@ -30,7 +30,7 @@ export class DataService {
       ))
     ];
     callback(list);*/
- this.http.get(`/coffees`)
+ this.http.get(`${this.endpoint}/coffees`)
    .subscribe(response => {
      console.log(response);
      callback(response);
@@ -38,12 +38,12 @@ export class DataService {
   }
   save(coffee, callback) {
     if (coffee._id) {
-      this.http.put(`/coffees/${coffee._id}`, coffee)
+      this.http.put(`${this.endpoint}/coffees/${coffee._id}`, coffee)
         .subscribe(response => {
           callback(true);
           });
     } else {
-      this.http.post(`/coffees`, coffee)
+      this.http.post(`${this.endpoint}/coffees`, coffee)
         .subscribe(response => {
           callback(true);
         });
