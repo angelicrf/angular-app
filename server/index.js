@@ -11,7 +11,7 @@ const dataStore = new nedb({
 const restApi = rest();
 restApi.addDatastore('coffees',dataStore);
 app.use(cors());
-let host = process.env.HOST;
+let host = "https://radiant-citadel-46339.herokuapp.com";
 const server_port = process.env.SERVER_PORT;
 app.use('/', restApi);
 /*let data= "somerandom string";

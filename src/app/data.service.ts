@@ -10,7 +10,7 @@ export class DataService {
   productos: any[] = [];
 
   constructor(private http: HttpClient ) { }
-  public endpoint = `https://${process.env.HOST}:${process.env.SERVER_PORT}`;
+  public endpoint = 'https://radiant-citadel-46339.herokuapp.com';
 
 
   get(coffeeId: string, callback) {
