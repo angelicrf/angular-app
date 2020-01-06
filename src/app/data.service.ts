@@ -10,8 +10,7 @@ export class DataService {
   productos: any[] = [];
 
   constructor(private http: HttpClient ) { }
-
-  public endpoint = 'http://localhost:30026';
+  public endpoint = `http://${process.env.NODE_HOST}:${process.env.SERVER_PORT}`;
    /* //+ encodeURIComponent(process.env.SERVER_PORT);*/
 
   get(coffeeId: string, callback) {
