@@ -2,7 +2,7 @@ const express = require('express');
 const nedb = require('nedb');
 const rest = require('express-nedb-rest');
 const cors = require('cors');
-
+const path = require('path');
 const app = express();
 const dataStore = new nedb({
                   filename: "mycoffeeapp.db",
@@ -11,9 +11,12 @@ const dataStore = new nedb({
 const restApi = rest();
 restApi.addDatastore('coffees',dataStore);
 app.use(cors());
-
-const server_port = process.env.SERVER_PORT;
+const server_port = process.env.PORT;
 app.use('/', restApi);
+app.get('/', function (req,res) {
+  res.send();
+});
+
 /*let data= "somerandom string";
 fetch('http://localhost:30026/coffees', {
   method: 'post',
@@ -25,6 +28,6 @@ fetch('http://localhost:30026/coffees', {
 }).then((body)=> {
   console.log(body)// body can be used to get data from another server
 });*/
-app.listen(host,server_port);
+app.listen(server_port);
 console.log(`The server is running on port :${server_port}`);
 
