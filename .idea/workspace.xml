@@ -4,6 +4,7 @@
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +101,7 @@
       <workItem from="1578332224903" duration="3159000" />
       <workItem from="1578337139145" duration="534000" />
       <workItem from="1578338060959" duration="10049000" />
-      <workItem from="1578364063299" duration="6085000" />
+      <workItem from="1578364063299" duration="7061000" />
     </task>
     <servers />
   </component>

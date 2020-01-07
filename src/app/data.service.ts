@@ -10,7 +10,7 @@ export class DataService {
   productos: any[] = [];
 
   constructor(private http: HttpClient ) { }
-  public endpoint = `https://young-tundra-14994.herokuapp.com:${process.env.PORT}`;
+  public endpoint = `https://young-tundra-14994.herokuapp.com/coffees`;
 
   get(coffeeId: string, callback) {
       console.log(`here is the ${this.endpoint}`);
@@ -29,7 +29,7 @@ export class DataService {
       ))
     ];
     callback(list);*/
- this.http.get(`${this.endpoint}/coffees`)
+ this.http.get(`${this.endpoint}`)
    .subscribe(response => {
      console.log(response);
      callback(response);
@@ -37,12 +37,12 @@ export class DataService {
   }
   save(coffee, callback) {
     if (coffee._id) {
-      this.http.put(`${this.endpoint}/coffees/${coffee._id}`, coffee)
+      this.http.put(`${this.endpoint}/${coffee._id}`, coffee)
         .subscribe(response => {
           callback(true);
           });
     } else {
-      this.http.post(`${this.endpoint}/coffees`, coffee)
+      this.http.post(`${this.endpoint}`, coffee)
         .subscribe(response => {
           callback(true);
         });
