@@ -27,7 +27,7 @@
   <component name="ProjectId" id="1VGOexw35fZr2TNETIdE86s3OAK" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/valid-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,6 +98,7 @@
       <workItem from="1578337139145" duration="534000" />
       <workItem from="1578338060959" duration="10049000" />
       <workItem from="1578364063299" duration="7667000" />
+      <workItem from="1578517074598" duration="32000" />
     </task>
     <servers />
   </component>
