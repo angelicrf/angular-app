@@ -11,6 +11,9 @@ export class UsersComponent implements OnInit {
   users: User[];
   shpwExtended = false;
   loaded = false;
+  enableAdd = true;
+  currentClasses = {};
+  currentStyles = {};
   constructor() { }
 
   ngOnInit() {
@@ -24,7 +27,11 @@ export class UsersComponent implements OnInit {
             street: '65th Ave North',
             city: 'Bellevue',
             state: 'WA'
-          }
+          },
+          image: 'https://loremflickr.com/320/240/dog',
+          isActive: true,
+          balance: 100,
+          registered: new Date('01/02/2020 08:30:00')
         },
         {
           firstName: 'Kevin',
@@ -34,7 +41,11 @@ export class UsersComponent implements OnInit {
             street: '87th Ave South',
             city: 'Lynwood',
             state: 'WA'
-          }
+          },
+          image: 'https://loremflickr.com/g/320/240/paris',
+          isActive: false,
+          balance: 200,
+          registered: new Date('01/09/2020 07:30:00')
         },
         {
           firstName: 'John',
@@ -44,11 +55,17 @@ export class UsersComponent implements OnInit {
             street: '98tth NorthWest',
             city: 'MercerIsland',
             state: 'WA'
-          }
+          },
+          image: 'https://loremflickr.com/320/240/paris,girl/all',
+          isActive: true,
+          balance: 300,
+          registered: new Date('01/05/2020 10:50:00')
         }
       ];
       this.loaded = true;
       this.shpwExtended = true;
+      this.setCurrentClasses();
+      this.setCurrentStyles();
       this.addUser({
         firstName: 'David',
         lastName: 'Johnson',
@@ -66,5 +83,16 @@ export class UsersComponent implements OnInit {
   addUser(user: User) {
     this.users.push(user);
   }
-
+  setCurrentClasses() {
+    this.currentClasses = {
+      'btn-success': this.enableAdd,
+      'big-text': this.shpwExtended
+    };
+  }
+  setCurrentStyles() {
+    this.currentStyles = {
+      'padding-top': this.shpwExtended ? '0' : '60px',
+      'font-size': this.shpwExtended ? '' : '40px'
+    };
+  }
 }
