@@ -7,11 +7,21 @@ import {User} from '../../models/User';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-
+  user: User = {
+    firstName: '',
+    lastName: '',
+    age: null,
+    address: {
+      street: '',
+      city: '',
+      state: ''
+    }
+  };
   users: User[];
   shpwExtended = false;
   loaded = false;
   enableAdd = true;
+  showUseForm = true;
   currentClasses = {};
   currentStyles = {};
   constructor() { }
@@ -31,7 +41,8 @@ export class UsersComponent implements OnInit {
           image: 'https://loremflickr.com/320/240/dog',
           isActive: true,
           balance: 100,
-          registered: new Date('01/02/2020 08:30:00')
+          registered: new Date('01/02/2020 08:30:00'),
+          hide: true
         },
         {
           firstName: 'Kevin',
@@ -45,7 +56,8 @@ export class UsersComponent implements OnInit {
           image: 'https://loremflickr.com/g/320/240/paris',
           isActive: false,
           balance: 200,
-          registered: new Date('01/09/2020 07:30:00')
+          registered: new Date('01/09/2020 07:30:00'),
+          hide: false
         },
         {
           firstName: 'John',
@@ -59,29 +71,32 @@ export class UsersComponent implements OnInit {
           image: 'https://loremflickr.com/320/240/paris,girl/all',
           isActive: true,
           balance: 300,
-          registered: new Date('01/05/2020 10:50:00')
+          registered: new Date('01/05/2020 10:50:00'),
+          hide: true
         }
       ];
       this.loaded = true;
       this.shpwExtended = true;
       this.setCurrentClasses();
       this.setCurrentStyles();
-      this.addUser({
-        firstName: 'David',
-        lastName: 'Johnson',
-    /*    age: 45,
-        address: {
-          street: '12th Ave West',
-          city: 'Redmond',
-          state: 'WA'
-        }*/
-      });
 
     }, 2000);
 
   }
-  addUser(user: User) {
-    this.users.push(user);
+  addUser() {
+    this.user.isActive = true;
+    this.user.registered = new Date();
+    this.users.push(this.user);
+    this.user = {
+      firstName: '',
+      lastName: '',
+      age: null,
+      address: {
+        street: '',
+        city: '',
+        state: ''
+      }
+    };
   }
   setCurrentClasses() {
     this.currentClasses = {
@@ -94,5 +109,15 @@ export class UsersComponent implements OnInit {
       'padding-top': this.shpwExtended ? '0' : '60px',
       'font-size': this.shpwExtended ? '' : '40px'
     };
+  }
+  fireEvent(e) {
+    console.log('the button is clicked.', e.target.value);
+  }
+  toggleHide(user: User) {
+    user.hide = !user.hide;
+  }
+  onSubmit(e) {
+    console.log(e.target.value);
+    e.preventDefault();
   }
 }

@@ -1,7 +1,51 @@
-<h2>Users</h2>
-<button [disabled]="!enableAdd" class="btn btn-block mb-3" [ngClass]="currentClasses">
-  Add new user
-</button>
+<button (click)="showUseForm = !showUseForm" class="btn btn-dark mb-3">Add User</button>
+<div class="card card-body mb-3" *ngIf="showUseForm">
+  <h2>Add User</h2>
+  <form (ngSubmit)="onSubmit($event)">
+    <div class="form-group">
+    <label>FirstName:</label>
+      <label>
+        <input [(ngModel)]="user.firstName" type="text" class="form-control" name="firstname">
+      </label>
+    </div>
+    <div class="form-group">
+      <label>Last Name:</label>
+      <label>
+        <input [(ngModel)]="user.lastName" type="text" class="form-control" name="lastname">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>Age:</label>
+      <label>
+        <input [(ngModel)]="user.age" type="number" class="form-control" name="age">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>Street:</label>
+      <label>
+        <input [(ngModel)]="user.address.street" type="text" class="form-control" name="street">
+      </label>
+    </div>
+    <div class="form-group">
+      <label>City:</label>
+      <label>
+        <input [(ngModel)]="user.address.city" type="text" class="form-control" name="city">
+      </label>
+    </div>
+    <div class="form-group">
+      <label>State:</label>
+      <label>
+        <input [(ngModel)]="user.address.state" type="text" class="form-control" name="state">
+      </label>
+    </div>
+      <button  (click)="addUser()" [disabled]="!enableAdd"  class="btn btn-block mb-3" [ngClass]="currentClasses">
+        Add new user
+      </button>
+  </form>
+</div>
+
 <ul class="list-unstyled" *ngIf="loaded && users?.length > 0">
   <li class="card card-body mb-2" *ngFor="let user of users" [class.bg-light]="user.isActive"
       [style.border-color]="user.isActive ? 'green' : ''">
@@ -12,8 +56,13 @@
 
       </div>
       <div class="col-sm-8">
-        <h3 [ngStyle]="currentStyles">{{user.firstName | uppercase}} {{user.lastName}}</h3>
-          <ul class="list-group" *ngIf="shpwExtended && user.age && user.address">
+        <h3 [ngStyle]="currentStyles">{{user.firstName | uppercase}} {{user.lastName}}
+        <small *ngIf="user.age && user.address">
+          <button (click)="toggleHide(user)" class="btn-dark btn-sm"><i [ngClass]="user.hide ? 'fa fa-plus' : 'fa fa-minus'"></i> </button>
+        </small>
+
+        </h3>
+          <ul class="list-group" *ngIf="!user.hide && user.age && user.address">
           <li class="list-group-item">Age : {{ user.age }}</li>
           <li class="list-group-item">Address : {{ user.address.street }}, {{ user.address.city }},  {{user.address.state }}</li>
             <li class="list-goup-item">Currency: {{user.balance | currency}} until  {{.5 | percent}}</li>
