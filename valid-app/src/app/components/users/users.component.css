@@ -1,3 +1,6 @@
 .big-text {
   text-transform: uppercase;
 }
+input {
+  width: fit-content;
+}

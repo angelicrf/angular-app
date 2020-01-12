@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {User} from '../../models/User';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-users',
@@ -16,14 +17,17 @@ export class UsersComponent implements OnInit {
       city: '',
       state: ''
     }
+
   };
   users: User[];
   shpwExtended = false;
   loaded = false;
   enableAdd = true;
-  showUseForm = true;
+  showUseForm = false;
   currentClasses = {};
   currentStyles = {};
+  @ViewChild('userForm', {static: true}) form: NgForm;
+
   constructor() { }
 
   ngOnInit() {
@@ -87,9 +91,11 @@ export class UsersComponent implements OnInit {
     this.user.isActive = true;
     this.user.registered = new Date();
     this.users.push(this.user);
+    // document.querySelector('form').reset();
+
     this.user = {
-      firstName: '',
-      lastName: '',
+      firstName: 'sent',
+      lastName: 'sent',
       age: null,
       address: {
         street: '',
@@ -117,7 +123,20 @@ export class UsersComponent implements OnInit {
     user.hide = !user.hide;
   }
   onSubmit(e) {
+    // {value , valid}: {value: User, valid: boolean}) {
     console.log(e.target.value);
-    e.preventDefault();
+     e.preventDefault();
+    /*if (!valid) {
+     console.log('the form is not valid');
+    } else {
+     value.isActive = true;
+     value.registered = new Date();
+     value.hide = true;
+     this.shpwExtended = true;
+     value.firstName = (document.getElementById('first')as HTMLTextAreaElement).value;
+     value.lastName = (document.getElementById('last')as HTMLTextAreaElement).value;
+     this.users.unshift(value);
+    // this.form.reset();
+    }*/
   }
 }
