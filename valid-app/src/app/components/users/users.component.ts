@@ -1,6 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {User} from '../../models/User';
 import {NgForm} from '@angular/forms';
+import {DataService} from '../../services/data.service';
 
 @Component({
   selector: 'app-users',
@@ -26,64 +27,24 @@ export class UsersComponent implements OnInit {
   showUseForm = false;
   currentClasses = {};
   currentStyles = {};
+  data: any;
   @ViewChild('userForm', {static: true}) form: NgForm;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.getData().subscribe(data => {
+      console.log('The data is:', data);
+    });
     setTimeout(() => {
-      this.users = [
-        {
-          firstName: 'Angelique',
-          lastName: 'Refahiyat',
-          age: 30,
-          address: {
-            street: '65th Ave North',
-            city: 'Bellevue',
-            state: 'WA'
-          },
-          image: 'https://loremflickr.com/320/240/dog',
-          isActive: true,
-          balance: 100,
-          registered: new Date('01/02/2020 08:30:00'),
-          hide: true
-        },
-        {
-          firstName: 'Kevin',
-          lastName: 'Kastner',
-          age: 65,
-          address: {
-            street: '87th Ave South',
-            city: 'Lynwood',
-            state: 'WA'
-          },
-          image: 'https://loremflickr.com/g/320/240/paris',
-          isActive: false,
-          balance: 200,
-          registered: new Date('01/09/2020 07:30:00'),
-          hide: false
-        },
-        {
-          firstName: 'John',
-          lastName: 'McKenzi',
-          age: 25,
-          address: {
-            street: '98tth NorthWest',
-            city: 'MercerIsland',
-            state: 'WA'
-          },
-          image: 'https://loremflickr.com/320/240/paris,girl/all',
-          isActive: true,
-          balance: 300,
-          registered: new Date('01/05/2020 10:50:00'),
-          hide: true
-        }
-      ];
+    this.dataService.getUsers().subscribe(user => {
+      this.users = user;
       this.loaded = true;
-      this.shpwExtended = true;
-      this.setCurrentClasses();
-      this.setCurrentStyles();
+    });
 
+    this.shpwExtended = true;
+    this.setCurrentClasses();
+    this.setCurrentStyles();
     }, 2000);
 
   }
@@ -125,7 +86,7 @@ export class UsersComponent implements OnInit {
   onSubmit(e) {
     // {value , valid}: {value: User, valid: boolean}) {
     console.log(e.target.value);
-     e.preventDefault();
+    e.preventDefault();
     /*if (!valid) {
      console.log('the form is not valid');
     } else {
