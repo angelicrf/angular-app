@@ -28,4 +28,8 @@ export class PostService {
     const Url = `${this.pstUrl}/${id}`;
     return this.http.delete<Post>(Url, httpOptions);
   }
+  getPostId(id: number): Observable<Post[]> {
+    const Url = `${this.pstUrl}/${id}`;
+    return this.http.get<Post[]>(Url);
+  }
 }
