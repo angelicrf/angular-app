@@ -10,7 +10,7 @@ import { Post} from '../../models/Post';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  post: Post[];
+  post: Post;
 
   constructor(private rout: ActivatedRoute, private postService: PostService, private location: Location) {
   }
