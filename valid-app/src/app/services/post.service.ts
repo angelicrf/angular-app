@@ -19,4 +19,13 @@ export class PostService {
   savePost(post: Post): Observable<Post> {
     return this.http.post<Post>(this.pstUrl, post, httpOptions);
   }
+  updatePost(post: Post): Observable<Post> {
+    const Url = `${this.pstUrl}/${post.id}`;
+    return this.http.put<Post>(Url, post, httpOptions );
+  }
+  removePost(post: Post | number): Observable<Post> {
+    const id = typeof post === 'number' ? post : post.id;
+    const Url = `${this.pstUrl}/${id}`;
+    return this.http.delete<Post>(Url, httpOptions);
+  }
 }
