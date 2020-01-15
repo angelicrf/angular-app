@@ -1230,3 +1230,4 @@ module.exports = __webpack_require__(/*! /home/bcuser/Git/angular-app/src/main.t
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main-es2015.js.map
