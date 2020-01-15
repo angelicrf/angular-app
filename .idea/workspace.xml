@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/main-es2015.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/main-es2015.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/main-es5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/main-es5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es2015.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es2015.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime-es2015.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime-es2015.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime-es5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime-es5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/styles-es2015.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/styles-es2015.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/styles-es5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/styles-es5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/vendor-es2015.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/vendor-es2015.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/vendor-es5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/valid-app/vendor-es5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +101,7 @@
       <workItem from="1578338060959" duration="10049000" />
       <workItem from="1578364063299" duration="7667000" />
       <workItem from="1578517074598" duration="32000" />
-      <workItem from="1579115210871" duration="826000" />
+      <workItem from="1579115210871" duration="1090000" />
     </task>
     <servers />
   </component>
