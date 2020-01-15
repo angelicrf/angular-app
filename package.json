@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "postinstall": "ng build --aot -prod",
-    "build": "ng build",
+    "start": "npm install && http-server dist/valid-app/",
+    "postinstall": "ng build --aot --prod",
+    "build": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -29,7 +29,16 @@
     "@angular/cli": "~8.3.21",
     "typescript": "~3.5.3",
     "zone.js": "~0.9.1",
-    "express": "latest"
+    "express": "latest",
+    "http-server": "*"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "engines": {
+    "node": "10.11.0",
+    "npm": "6.13.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.21",

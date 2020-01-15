@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="" />
+    <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/valid-app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/main-es2017.5012ff6f5dcfdf4efdc5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/main-es5.5012ff6f5dcfdf4efdc5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es2017.2987770fde9daa1d8a2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es5.6696c533341b95a3d617.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime-es2017.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime-es5.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/styles.1dab60dbab22f56a5eb1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/main-es2017.5012ff6f5dcfdf4efdc5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/main-es5.5012ff6f5dcfdf4efdc5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/polyfills-es2017.2987770fde9daa1d8a2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/polyfills-es5.6696c533341b95a3d617.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/runtime-es2017.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/runtime-es5.edb2fcf2778e7bf1d426.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/dist/valid-app/styles.1dab60dbab22f56a5eb1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/valid-app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/valid-app/tsconfig.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +52,7 @@
   <component name="ProjectId" id="1VGOexw35fZr2TNETIdE86s3OAK" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/valid-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,6 +124,7 @@
       <workItem from="1578338060959" duration="10049000" />
       <workItem from="1578364063299" duration="7667000" />
       <workItem from="1578517074598" duration="32000" />
+      <workItem from="1579115210871" duration="324000" />
     </task>
     <servers />
   </component>
