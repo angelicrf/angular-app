@@ -344,4 +344,4 @@ module.exports = __webpack_require__(/*! /home/bcuser/Git/angular-app/src/styles
 /***/ })
 
 },[[3,"runtime"]]]);
-//# sourceMappingURL=styles.js.map
+//# sourceMappingURL=styles-es2015.js.map

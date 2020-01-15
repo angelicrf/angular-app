@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills-es5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/polyfills.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/runtime.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/styles.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/valid-app/vendor.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,7 +116,7 @@
       <workItem from="1578338060959" duration="10049000" />
       <workItem from="1578364063299" duration="7667000" />
       <workItem from="1578517074598" duration="32000" />
-      <workItem from="1579115210871" duration="9715000" />
+      <workItem from="1579115210871" duration="12661000" />
     </task>
     <servers />
   </component>
