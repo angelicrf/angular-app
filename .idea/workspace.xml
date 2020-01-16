@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c0ec6f8-572f-433c-9363-7de5190040ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/devlogger/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devlogger/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devlogger/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/devlogger/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,7 @@
   <component name="ProjectId" id="1VGOexw35fZr2TNETIdE86s3OAK" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.10.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1578364063299" duration="7667000" />
       <workItem from="1578517074598" duration="32000" />
       <workItem from="1579115210871" duration="13270000" />
-      <workItem from="1579195930644" duration="14892000" />
+      <workItem from="1579195930644" duration="15911000" />
     </task>
     <servers />
   </component>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <excludedPredefinedLibrary name="angular-app/coffee-app/node_modules" />
-    <excludedPredefinedLibrary name="angular-app/coffee-app/server/node_modules" />
-    <excludedPredefinedLibrary name="angular-app/server/node_modules" />
+    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
