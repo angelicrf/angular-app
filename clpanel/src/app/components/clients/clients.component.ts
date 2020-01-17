@@ -13,7 +13,7 @@ export class ClientsComponent implements OnInit {
   constructor(private clservice: ClientService) { }
 
   ngOnInit() {
-    this.clservice.getClient().subscribe(client => {
+    this.clservice.getClients().subscribe(client => {
       console.log(client);
       this.clients = client;
       this.getTotalOwed();

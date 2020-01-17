@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class ClientService {
 
-  client: Observable<Client>;
+  client: Observable<Client[]>;
   clients: Observable<Client[]>;
   clientsCollection: AngularFirestoreCollection<Client>;
   clientDoc: AngularFirestoreDocument<Client>;
@@ -16,7 +16,7 @@ export class ClientService {
   constructor(private fs: AngularFirestore) {
     this.clientsCollection = this.fs.collection('clients', ref => ref.orderBy('lastName', 'asc'));
   }
-  getClient(): Observable<Client[]> {
+  getClients(): Observable<Client[]> {
     this.clients = this.clientsCollection.snapshotChanges().pipe(
       map(actions => actions.map(a => {
         const data = a.payload.doc.data() as Client;
@@ -28,5 +28,19 @@ export class ClientService {
   }
   newClient(client: Client) {
     this.clientsCollection.add(client);
+  }
+  getClient(id: string): Observable<Client[]> {
+    this.clientDoc = this.fs.doc<Client>(`client/${id}`);
+    this.client = this.clientsCollection.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        if (a.payload.doc.exists === false) {
+          return null;
+        } else {
+        const data = a.payload.doc.data() as Client;
+        data.id = a.payload.doc.id;
+        return { id, ...data };
+      }}))
+    );
+    return this.client;
   }
 }

@@ -1,1 +1,35 @@
-<p>client-details works!</p>
+<div class="row">
+<div class="col-md-6">
+  <a routerLink="/" class="btn btn-light">
+    <i class="fa fa-arrow-circle-o-left"></i>Back to Dashbord
+  </a>
+</div>
+  <div class="btn-group pull-right">
+    <a routerLink="/client/edit/{{id}}" class="btn btn-dark">Edit</a>
+  </div>
+  <button (click)="onDeleteClick()" class="btn btn-danger">Delete</button>
+</div>
+<hr>
+<div *ngFor="let client of client" class="card" >
+  <h3 class="card-header">{{client.firstName}}, {{client.lastName}}</h3>
+   <div class="card-body">
+     <div class="row">
+       <div class="cal-md-8 cal-sm-6">
+         <h4> ClientId: {{client.id}}</h4>
+       </div>
+       <div class="cal-md-8 cal-sm-6">
+         <h4>Balance{{client.balance}}</h4>
+       </div>
+     </div>
+     <hr>
+     <ul class="list-group">
+       <li class="list-group-item">
+         Constact Email: {{client.email}}
+       </li>
+       <li class="list-group-item">
+         Contact Phone: {{client.phone}}
+       </li>
+     </ul>
+   </div>
+
+</div>
