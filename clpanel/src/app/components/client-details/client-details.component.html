@@ -10,7 +10,7 @@
   <button (click)="onDeleteClick()" class="btn btn-danger">Delete</button>
 </div>
 <hr>
-<div *ngFor="let client of client" class="card" >
+<div *ngIf="client" class="card" >
   <h3 class="card-header">{{client.firstName}}, {{client.lastName}}</h3>
    <div class="card-body">
      <div class="row">

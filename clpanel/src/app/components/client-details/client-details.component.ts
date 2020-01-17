@@ -11,7 +11,7 @@ import {FlashMessagesService} from 'angular2-flash-messages';
 })
 export class ClientDetailsComponent implements OnInit {
   id: string;
-  client: Client[];
+  client: Client;
   hasBalance = false;
   showBalanceUpdateInput = false;
 
@@ -24,7 +24,7 @@ export class ClientDetailsComponent implements OnInit {
     this.id = this.ActiveRoute.snapshot.params.id;
     this.clService.getClient(this.id).subscribe(client => {
       if (client != null) {
-        if (client.length > 0) {
+        if (client.balance > 0) {
           this.hasBalance = true;
         }
         this.client = client;
