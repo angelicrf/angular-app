@@ -4,6 +4,7 @@ import {Client} from '../../../models/Client';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 import {FlashMessagesService} from 'angular2-flash-messages';
 
+
 @Component({
   selector: 'app-client-details',
   templateUrl: './client-details.component.html',
@@ -30,10 +31,22 @@ export class ClientDetailsComponent implements OnInit {
         this.client = client;
         console.log(this.client);
     }});
-
   }
-  onDeleteClick(){
+  onDeleteClick() {
+    if (confirm('Are you sure to delete?')) {
+      this.clService.deleteClient(this.client);
+      this.flshMessage.show('Client removed.', {
+        cssClass: 'alert-success', timeout: 4000
+      });
+      this.router.navigate(['/']);
+    }
+    }
 
+  updateBalance() {
+    this.clService.updateClient(this.client);
+    this.flshMessage.show('Client balance updated.', {
+      cssClass: 'alert-success', timeout: 4000
+    });
   }
 
 }
