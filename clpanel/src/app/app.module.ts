@@ -21,6 +21,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import {ClientService} from './services/client.service';
 import {FormsModule} from '@angular/forms';
 import {FlashMessagesModule} from 'angular2-flash-messages';
+import {AuthService} from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import {FlashMessagesModule} from 'angular2-flash-messages';
     FormsModule,
     FlashMessagesModule.forRoot()
   ],
-  providers: [ClientService],
+  providers: [ClientService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

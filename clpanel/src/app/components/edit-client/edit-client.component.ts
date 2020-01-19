@@ -4,8 +4,6 @@ import {Client} from '../../../models/Client';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 import {FlashMessagesService} from 'angular2-flash-messages';
 
-
-
 @Component({
   selector: 'app-edit-client',
   templateUrl: './edit-client.component.html',
