@@ -12,8 +12,15 @@ export class SettingsService {
     disableBalanceOnEdit: false
 
 };
-  constructor() { }
+  constructor() {
+    if(localStorage.getItem('settings') != null) {
+      this.settings = JSON.parse((localStorage.getItem('settings')));
+    }
+  }
   getSetting(): Setting {
     return this.settings;
 }
+  changettings(settings: Setting) {
+    localStorage.setItem('settings', JSON.stringify(settings));
+  }
 }
